@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,15 +8,15 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -33,8 +33,8 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -60,9 +60,9 @@
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="fp3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="Beschreib" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="9" fill="1" visible="no" active="yes"/>
 <layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="BD-Top" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
@@ -200,6 +200,7 @@
 <rectangle x1="15.2" y1="6.95" x2="15.5" y2="7.25" layer="1" rot="R180"/>
 <text x="15" y="7.25" size="1.27" layer="49" font="vector" rot="SR180">shack</text>
 <rectangle x1="9.75" y1="3.5" x2="16.5" y2="7.5" layer="41"/>
+<wire x1="17.25" y1="12.5" x2="17.25" y2="15.5" width="0.254" layer="49"/>
 </plain>
 <libraries>
 <library name="jocki">
@@ -505,17 +506,17 @@
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="C0603K">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0603 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 1608</description>
-<wire x1="-0.725" y1="0.35" x2="0.725" y2="0.35" width="0.1016" layer="51"/>
-<wire x1="0.725" y1="-0.35" x2="-0.725" y2="-0.35" width="0.1016" layer="51"/>
-<smd name="1" x="-0.875" y="0" dx="1.05" dy="1.08" layer="1"/>
-<smd name="2" x="0.875" y="0" dx="1.05" dy="1.08" layer="1"/>
-<text x="-0.8" y="0.65" size="1.016" layer="25">&gt;NAME</text>
-<text x="-0.8" y="-1.65" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8" y1="-0.4" x2="-0.45" y2="0.4" layer="51"/>
-<rectangle x1="0.45" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+<package name="C0805K">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0805 reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 2012</description>
+<wire x1="-0.925" y1="0.6" x2="0.925" y2="0.6" width="0.1016" layer="51"/>
+<wire x1="0.925" y1="-0.6" x2="-0.925" y2="-0.6" width="0.1016" layer="51"/>
+<smd name="1" x="-1" y="0" dx="1.3" dy="1.6" layer="1"/>
+<smd name="2" x="1" y="0" dx="1.3" dy="1.6" layer="1"/>
+<text x="-1" y="0.875" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1" y="-1.9" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1" y1="-0.65" x2="-0.5" y2="0.65" layer="51"/>
+<rectangle x1="0.5" y1="-0.65" x2="1" y2="0.65" layer="51"/>
 </package>
 </packages>
 </library>
@@ -773,7 +774,7 @@ einem neuen Namen ab.
 <element name="C6" library="rcl" package="C0603" value="100n" x="20.718" y="15.858"/>
 <element name="C7" library="rcl" package="C0603" value="100n" x="11.068" y="10.418" rot="MR315"/>
 <element name="C8" library="rcl" package="C0603" value="100n" x="27.858" y="9.798" rot="MR45"/>
-<element name="C9" library="rcl" package="C0603K" value="1u" x="5.308" y="14.858" rot="MR270"/>
+<element name="C9" library="rcl" package="C0805K" value="4.7u" x="5.308" y="14.858" rot="MR270"/>
 <element name="PB0" library="jocki" package="2,15/1,0-NOPLACE" value="WIREPAD2,15/1,0-NOPLACE" x="11.938" y="19.558" rot="R270"/>
 <element name="PB1" library="jocki" package="2,15/1,0-NOPLACE" value="WIREPAD2,15/1,0-NOPLACE" x="14.478" y="19.558" rot="R270"/>
 <element name="PB2" library="jocki" package="2,15/1,0-NOPLACE" value="WIREPAD2,15/1,0-NOPLACE" x="17.018" y="19.558" rot="R270"/>
@@ -805,10 +806,10 @@ einem neuen Namen ab.
 <element name="GND" library="jocki" package="2,15/1,0-NOPLACE" value="WIREPAD2,15/1,0-NOPLACE" x="1.778" y="19.558" rot="R90"/>
 <element name="VCC" library="jocki" package="2,15/1,0-NOPLACE" value="WIREPAD2,15/1,0-NOPLACE" x="4.318" y="19.558" rot="R90"/>
 <element name="R5" library="rcl" package="R0603" value="180" x="16.508" y="14.008" rot="R90"/>
-<element name="R6" library="rcl" package="R0603" value="180" x="18.008" y="14.008" rot="R270"/>
+<element name="R6" library="rcl" package="R0603" value="150" x="18.008" y="14.008" rot="R270"/>
 <element name="SJ1" library="jumper" package="SJ" value="" x="14.208" y="13.218"/>
-<element name="LED" library="led" package="CHIPLED_0805" value="" x="13.988" y="15.148" rot="R90"/>
-<element name="POWER" library="led" package="CHIPLED_0805" value="" x="20.338" y="12.638" rot="R270"/>
+<element name="LED" library="led" package="CHIPLED_0805" value="RED" x="13.988" y="15.148" rot="R90"/>
+<element name="POWER" library="led" package="CHIPLED_0805" value="GREEN" x="20.338" y="12.638" rot="R270"/>
 <element name="BOOT" library="jocki" package="KMR2NG" value="SMDSWITCHKMR2" x="35.008" y="8.008"/>
 <element name="R4" library="rcl" package="R0603" value="10k" x="31.358" y="6.578" rot="R90"/>
 <element name="!RESETP" library="jocki" package="2,15/1,0-NOPLACE" value="WIREPAD2,15/1,0-NOPLACE" x="24.638" y="19.558" rot="R90"/>
@@ -861,7 +862,7 @@ einem neuen Namen ab.
 <wire x1="6.508" y1="16.008" x2="10.008" y2="16.008" width="0.8128" layer="1"/>
 <wire x1="10.008" y1="16.008" x2="10.508" y2="15.508" width="0.8128" layer="1"/>
 <wire x1="10.508" y1="15.508" x2="10.508" y2="12.508" width="0.8128" layer="1"/>
-<wire x1="5.308" y1="15.733" x2="4.318" y2="16.723" width="0.8128" layer="16"/>
+<wire x1="5.308" y1="15.858" x2="4.318" y2="16.723" width="0.8128" layer="16"/>
 <wire x1="4.318" y1="16.723" x2="4.318" y2="19.558" width="0.8128" layer="16"/>
 <wire x1="10.508" y1="12.508" x2="9.758" y2="11.758" width="0.8128" layer="1"/>
 <wire x1="9.758" y1="11.758" x2="8.508" y2="11.758" width="0.8128" layer="1"/>
@@ -949,8 +950,8 @@ einem neuen Namen ab.
 <wire x1="8.508" y1="7.758" x2="6.508" y2="9.758" width="0.8128" layer="16"/>
 <wire x1="6.508" y1="9.758" x2="6.508" y2="13.008" width="0.8128" layer="16"/>
 <wire x1="6.508" y1="13.008" x2="5.533" y2="13.983" width="0.8128" layer="16"/>
-<wire x1="5.533" y1="13.983" x2="5.308" y2="13.983" width="0.4064" layer="16"/>
-<wire x1="5.308" y1="13.983" x2="5.283" y2="14.008" width="0.4064" layer="16"/>
+<wire x1="5.533" y1="13.983" x2="5.308" y2="13.858" width="0.4064" layer="16"/>
+<wire x1="5.308" y1="13.858" x2="5.283" y2="14.008" width="0.4064" layer="16"/>
 <wire x1="5.283" y1="14.008" x2="4.008" y2="14.008" width="0.8128" layer="16"/>
 <wire x1="4.008" y1="14.008" x2="1.778" y2="16.238" width="0.8128" layer="16"/>
 <wire x1="1.778" y1="16.238" x2="1.778" y2="19.558" width="0.8128" layer="16"/>
