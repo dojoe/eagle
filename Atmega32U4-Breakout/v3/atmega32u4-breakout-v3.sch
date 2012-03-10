@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,16 +39,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -809,6 +809,28 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 <text x="-3" y="2.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-4" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="KMR2">
+<wire x1="-2.1" y1="-1.4" x2="-2.1" y2="1.4" width="0.127" layer="51"/>
+<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="51"/>
+<wire x1="2.1" y1="1.4" x2="2.1" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="2.1" y1="-1.4" x2="-2.1" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="0" y1="1" x2="0" y2="0.5" width="0.127" layer="51"/>
+<wire x1="0" y1="0.5" x2="0.25" y2="0" width="0.127" layer="51"/>
+<wire x1="0.25" y1="0" x2="0.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-0.5" x2="0" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1" x2="1.5" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1" x2="1.5" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.5" x2="1" y2="0" width="0.127" layer="51"/>
+<wire x1="1" y1="0" x2="1" y2="0.5" width="0.127" layer="51"/>
+<wire x1="1" y1="0" x2="0.25" y2="0" width="0.127" layer="51"/>
+<smd name="B2" x="2.1" y="-0.8" dx="1" dy="1" layer="1" rot="R90"/>
+<smd name="A2" x="2.1" y="0.8" dx="1" dy="1" layer="1" rot="R90"/>
+<smd name="A1" x="-2.1" y="0.8" dx="1" dy="1" layer="1" rot="R90"/>
+<smd name="B1" x="-2.1" y="-0.8" dx="1" dy="1" layer="1" rot="R90"/>
+<smd name="GND" x="0" y="1.425" dx="1.7" dy="0.55" layer="1" rot="R180"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 <package name="KMR2NG">
 <wire x1="-2.1" y1="-1.4" x2="-2.1" y2="1.4" width="0.127" layer="51"/>
 <wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="51"/>
@@ -971,6 +993,38 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 <pad name="1" x="0" y="0" drill="1" diameter="2.15" shape="octagon"/>
 <text x="-1.143" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+<package name="SMD2,54-2,54">
+<smd name="1" x="0" y="0" dx="2.54" dy="2.54" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+<package name="SMDCONTACT">
+<smd name="1" x="0" y="0" dx="0.254" dy="0.254" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+<package name="TXC-7M">
+<smd name="NC1" x="-1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="B" x="1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="NC2" x="1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="A" x="-1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-0.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.5" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="0" y1="1" x2="1" y2="0" width="0.127" layer="51"/>
+<wire x1="-1" y1="0" x2="0" y2="-1" width="0.127" layer="51"/>
+<wire x1="0" y1="0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="0" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-0.5" x2="-0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-0.25" y1="1.25" x2="0.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="-1.25" x2="0.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.1" x2="-1.6" y2="0.1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.1" x2="1.6" y2="0.1" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1367,6 +1421,22 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMD2,54-2,54" package="SMD2,54-2,54">
+<connects>
+<connect gate="G$1" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMDCONTACT" package="SMDCONTACT">
+<connects>
+<connect gate="G$1" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SMDSWITCH">
@@ -1383,7 +1453,16 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="KMR2" package="KMR2NG">
+<device name="KMR2NG" package="KMR2NG">
+<connects>
+<connect gate="G$1" pin="P" pad="A1 A2"/>
+<connect gate="G$1" pin="S" pad="B1 B2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KMR2" package="KMR2">
 <connects>
 <connect gate="G$1" pin="P" pad="A1 A2"/>
 <connect gate="G$1" pin="S" pad="B1 B2"/>
@@ -1478,6 +1557,15 @@ Source: www.cypressindustries.com</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7M" package="TXC-7M">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7672,7 +7760,7 @@ Source: www.kingbright.com</description>
 <part name="PC7" library="jocki" deviceset="WIREPAD" device="2,15/1,0-NOPLACE"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="RESET" library="jocki" deviceset="SMDSWITCH" device="KMR2"/>
+<part name="RESET" library="jocki" deviceset="SMDSWITCH" device="KMR2NG"/>
 <part name="GND" library="jocki" deviceset="WIREPAD" device="2,15/1,0-NOPLACE"/>
 <part name="VCC" library="jocki" deviceset="WIREPAD" device="2,15/1,0-NOPLACE"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="180"/>
@@ -7683,7 +7771,7 @@ Source: www.kingbright.com</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="BOOT" library="jocki" deviceset="SMDSWITCH" device="KMR2"/>
+<part name="BOOT" library="jocki" deviceset="SMDSWITCH" device="KMR2NG"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="!RESETP" library="jocki" deviceset="WIREPAD" device="2,15/1,0-NOPLACE"/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
