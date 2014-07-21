@@ -6366,6 +6366,16 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
 </package>
+<package name="SJNP">
+<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SJ">
@@ -6396,6 +6406,15 @@ Source: AVX .. aphvc.pdf</description>
 </technologies>
 </device>
 <device name="W" package="SJW">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NP" package="SJNP">
 <connects>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
@@ -7961,6 +7980,18 @@ Source: www.kingbright.com</description>
 <rectangle x1="-0.635" y1="-9.525" x2="0.635" y2="-4.445" layer="51"/>
 <rectangle x1="1.905" y1="-9.525" x2="3.175" y2="-4.445" layer="51"/>
 </package>
+<package name="SOT223-NP">
+<smd name="1" x="-2.2606" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="2" x="0.0254" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="3" x="2.3114" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="4" x="0" y="3.1496" dx="3.81" dy="2.0066" layer="1"/>
+<text x="-2.54" y="4.318" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.794" y="-5.842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="1.778" x2="1.524" y2="3.302" layer="51"/>
+<rectangle x1="-2.667" y1="-3.302" x2="-1.905" y2="-1.778" layer="51"/>
+<rectangle x1="1.905" y1="-3.302" x2="2.667" y2="-1.778" layer="51"/>
+<rectangle x1="-0.381" y1="-3.302" x2="0.381" y2="-1.778" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="REG1118">
@@ -8011,6 +8042,16 @@ Source: www.kingbright.com</description>
 <attribute name="OC_FARNELL" value="1296120" constant="no"/>
 <attribute name="OC_NEWARK" value="87H2562" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="NP" package="SOT223-NP">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8218,8 +8259,8 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206K" value="22u X7R"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="IC1" library="burr-brown" deviceset="REG1117" device=""/>
-<part name="SJ3" library="jumper" deviceset="SJ" device=""/>
+<part name="IC1" library="burr-brown" deviceset="REG1117" device="NP" value="REG1117NP"/>
+<part name="SJ3" library="jumper" deviceset="SJ" device="NP"/>
 <part name="RESET1" library="jocki" deviceset="SMDSWITCH" device="EDRAGON1" value="SMDSWITCHEDRAGON1"/>
 <part name="BOOT1" library="jocki" deviceset="SMDSWITCH" device="EDRAGON1" value="SMDSWITCHEDRAGON1"/>
 <part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD" value="PTCSMD"/>
